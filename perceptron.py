@@ -1,3 +1,12 @@
+Perceptron to prosty model neuronowy używany do klasyfikacji binarnej.
+Inicjalizujemy go podając współczynnik uczenia (eta) oraz liczbę epok (epochs).
+Metoda train trenuje perceptron na danych treningowych X z oczekiwanymi etykietami y.
+Wagi (self.w_) są aktualizowane w każdej epoce na podstawie błędów klasyfikacji.
+Metoda net_input oblicza wartość wejścia do perceptronu.
+Metoda predict dokonuje klasyfikacji na podstawie wartości wejścia.
+Jeśli masz jeszcze jakieś pytania, śmiało pytaj! 😊
+
+
 # implementacja Perceptronu
 import numpy as np
 
