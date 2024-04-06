@@ -1,3 +1,26 @@
+Definicja klasy: AdalineGD:
+Ta klasa reprezentuje model Adaline z nauką gradientową.
+Konstruktor (__init__) inicjalizuje model parametrami:
+eta: Współczynnik uczenia (domyślnie 0,01).
+epochs: Liczba iteracji treningowych (domyślnie 50).
+Metoda train trenuje model Adaline za pomocą nauki gradientowej:
+Inicjalizuje wagi (self.w_) na zera.
+Dla każdej epoki oblicza wyjście, aktualizuje wagi i oblicza koszt (błąd średniokwadratowy).
+Wagi są aktualizowane za pomocą iloczynu skalarnego cech wejściowych (X) i błędów (y - output).
+Koszt dla każdej epoki jest przechowywany w self.cost_.
+Metoda net_input oblicza wejście netto (ważoną sumę cech).
+Metoda activation zwraca wejście netto.
+Metoda predict klasyfikuje próbki na podstawie funkcji aktywacji:
+Jeśli aktywacja jest większa lub równa 0, przewiduje klasę 1; w przeciwnym razie przewiduje klasę -1.
+Użycie w Twoim kodzie:
+Zastosowałeś model Adaline do dwóch różnych zadań klasyfikacji binarnej:
+Setosa vs. Versicolor (używając cech długości działki kielicha i długości płatka).
+Virginica vs. Versicolor (używając cech szerokości działki kielicha i szerokości płatka).
+Dodatkowo połączyłeś Setosę i Virginicę (używając cech szerokości działki kielicha i szerokości płatka).
+Uwaga:
+Komentarz opisz funkcje klasy sugeruje, że zamierzasz opisać metody klasy bardziej szczegółowo. Możesz dodać odpowiednie opisy dla każdej metody, aby zwiększyć czytelność kodu.
+
+
 import numpy as np
 
 class AdalineGD(object):
